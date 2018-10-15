@@ -1,0 +1,8 @@
+header {
+  background: url(../img/1.jpg) no-repeat center top / contain;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
