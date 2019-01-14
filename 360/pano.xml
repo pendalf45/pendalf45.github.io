@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1">
+  <panorama id="node1">
+    <input height="2176" levelingroll="0" width="2176" levelbias="0.400" levelbiashidpi="0.400" leveltileurl="tiles/GDJU1953/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingpitch="0" overlap="1">
+      <level height="2176" preload="0" width="2176" predecode="0"/>
+      <level height="1088" preload="0" width="1088" predecode="0"/>
+      <level height="544" preload="0" width="544" predecode="0"/>
+      <level height="272" preload="1" width="272" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="160" fovmode="0">
+      <start fov="70" pan="-45.9929" tilt="-11.8285"/>
+      <min fov="5" pan="0" tilt="-90"/>
+      <max fov="120" pan="360" tilt="90"/>
+    </view>
+    <userdata tags="Desktop" longitude="" author="" datetime="" info="" title="" comment="" copyright="" latitude="" description="" source=""/>
+    <hotspots height="20" wordwrap="1" width="180">
+      <label height="20" bordercolor="0x000000" border="1" borderradius="1" backgroundcolor="0xffffff" wordwrap="1" width="180" textalpha="1" enabled="1" backgroundalpha="1" textcolor="0x000000" background="1" borderalpha="1"/>
+      <polystyle bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" handcursor="1" borderalpha="1"/>
+      <hotspot url="{node2}" skinid="ht_node" id="Point01" target="" pan="-34.74" title="Кухня" description="" tilt="-4.97"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" type="crossdissolve" blendtime="1" softedge="0" zoomoutpause="1" blendcolor="0x000000" enabled="0" zoomfov="20" zoomspeed="2" zoomin="0"/>
+    <control simulatemass="1" dblclickfullscreen="0" contextfullscreen="0" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" lockedwheel="0" invertcontrol="1" sensitivity="8" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input height="2748" levelingroll="0" width="2748" levelbias="0.400" levelbiashidpi="0.400" leveltileurl="tiles/OPWK1033/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingpitch="0" overlap="1">
+      <level height="2748" preload="0" width="2748" predecode="0"/>
+      <level height="1374" preload="0" width="1374" predecode="0"/>
+      <level height="687" preload="0" width="687" predecode="0"/>
+      <level height="343" preload="1" width="343" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="240" fovmode="0">
+      <start fov="70" pan="0" tilt="0"/>
+      <min fov="5" pan="0" tilt="-90"/>
+      <max fov="120" pan="360" tilt="90"/>
+    </view>
+    <userdata tags="Desktop" longitude="" author="" datetime="" info="" title="" comment="" copyright="" latitude="" description="" source=""/>
+    <hotspots height="20" wordwrap="1" width="180">
+      <label height="20" bordercolor="0x000000" border="1" borderradius="1" backgroundcolor="0xffffff" wordwrap="1" width="180" textalpha="1" enabled="1" backgroundalpha="1" textcolor="0x000000" background="1" borderalpha="1"/>
+      <polystyle bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" handcursor="1" borderalpha="1"/>
+      <hotspot url="{node1}" skinid="ht_node" id="Point01" target="" pan="55.99" title="Рот Игоря" description="" tilt="-16.44"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" type="crossdissolve" blendtime="1" softedge="0" zoomoutpause="1" blendcolor="0x000000" enabled="0" zoomfov="20" zoomspeed="2" zoomin="0"/>
+    <control simulatemass="1" dblclickfullscreen="0" contextfullscreen="0" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" lockedwheel="0" invertcontrol="1" sensitivity="8" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+</tour>
