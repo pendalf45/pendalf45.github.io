@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.chinaside.ru$ [NC]
+RewriteRule ^(.*)$ http://chinaside.ru/$1 [R=301,L]
