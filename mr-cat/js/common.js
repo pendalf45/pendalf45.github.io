@@ -22,12 +22,13 @@ $(function() {
 // })
 
   $('.carousel').slick({
-    slidesToShow: 3, // толкьо 1 слайд показывать одновременно
+    slidesToShow: 4, // толкьо 1 слайд показывать одновременно
     slidesToScroll: 1, // по 1-му слайду проскролливать
     speed: 8000, // медленная смена слайдов - скорость бегущей строки
     autoplay: true, // устанавливаем автозапуск слайдера
     autoplaySpeed: 0, //делаем запуск мгновенный с загрузкой страницы
     cssEase: 'linear', // делаем анимацию однотонной при смене слайда
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -134,31 +135,29 @@ $(function() {
 
 
   //comments
-  $('#comments .text__angle').on('click', function() {
+  $('#comments .angle').on('click', function() {
     var id = $(this).attr('data-target');
 
-    $(this).removeClass('show__icon');
-    $('#comments .hidden__block[data-target=' + id +']').slideDown();
-    $('#comments .text__angle2[data-target=' + id +']').addClass('show__icon');
+    $(this).toggleClass('active__icon');  //removeClass('show__icon')
+    $(this).next().slideToggle();
+    // $('#comments .hidden__block[data-target=' + id +']').slideDown(1000);
+    // $('#comments .text__angle2[data-target=' + id +']').fadeIn(1000);  //addClass('show__icon');
   });
 
-  $('#comments .text__angle2').on('click', function() {
-    var id = $(this).attr('data-target');
-
-    $(this).removeClass('show__icon');
-    $('#comments .hidden__block[data-target=' + id +']').slideUp();
-    $('#comments .text__angle[data-target=' + id +']').addClass('show__icon');
-  });
+  
 
 
   //faq
   $('#faq .question__block').on('click', function() {
+    var answer = $(this).next();
     if(!$(this).hasClass('act')) {
       $('#faq .question__block').removeClass('act');
       $(this).addClass('act');
-      var answer = $(this).next();
       $('#faq .answer__block').not(answer).slideUp(400);
       answer.slideDown(400);
+    } else {
+      answer.slideUp(400);
+      $(this).removeClass('act');
     }
     
   });
