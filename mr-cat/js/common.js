@@ -59,6 +59,16 @@ $(function() {
     ]
   });
 
+  //gallery
+
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200
+  });
+
+
+
 
   //more__info info__btn
   $('#more__info .info__btn').on('click', function() {
@@ -142,6 +152,11 @@ $(function() {
     
   });
 
+  if (window.matchMedia("(max-width: 575.98px)").matches) {
+    $('#faq .question__block').removeClass('act');
+    $('#faq .answer__block').removeClass('active');
+  }
+
   //service
   $('#service .table__header').on('click', function() {
     $(this).toggleClass("active__table").next().slideToggle(400);
@@ -159,6 +174,12 @@ $(function() {
   });
 
   $('.close__btn').on('click', function() {
+    $('.popup_wrap').fadeOut();
+    $('.popup').fadeOut();
+  });
+
+    
+  $('.popup_wrap').on('click', function() {
     $('.popup_wrap').fadeOut();
     $('.popup').fadeOut();
   });
