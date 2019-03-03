@@ -270,6 +270,7 @@ $(function() {
 
     $('.media__block').append(kids);
     $('.welcome__img img').attr("src", "img/welcome_mobile.png");
+    $('#form .logo img').attr("src", "img/white_logo.png");
   }
 
   
