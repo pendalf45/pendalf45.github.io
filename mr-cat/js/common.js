@@ -21,6 +21,12 @@ $(function() {
 //     // }
 // })
 
+  // setTimeout(function() {
+  //   $('#gallery .grid').css("display", "none");
+  // }, 1000);
+
+  
+
   $('.carousel').slick({
     slidesToShow: 5, // толкьо 1 слайд показывать одновременно
     slidesToScroll: 1, // по 1-му слайду проскролливать
@@ -61,11 +67,42 @@ $(function() {
 
   //gallery
 
-  $('.grid').masonry({
-    // options
-    itemSelector: '.grid-item',
-    columnWidth: 200
-  });
+//   var $grid = $('.grid').masonry({
+//     itemSelector: '.grid-item',
+//     columnWidth: '.grid-sizer',
+//     // gutter: 10,
+//     percentPosition: true
+//   });
+
+//   $grid.masonry( 'on', 'layoutComplete', function() {
+//     alert('layout is complete');
+// });
+
+//   $grid.masonry('on', 'layoutComplete', function(){
+//     alert('got here');
+//   });
+
+  var $grid = $('.grid').imagesLoaded( function() {
+    // init Masonry after all images have loaded
+    $grid.masonry({
+      itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    // gutter: 10,
+    percentPosition: true
+    });
+    $('#gallery .grid').css("display", "none");
+    });
+
+  // $('.grid').masonry().on( 'layoutComplete', function( event, laidOutItems ) {
+  //   alert(10);
+  // } );
+
+
+  
+  //gallery btn
+  $('#gallery .gallery__btn').on('click', function() {
+    $('#gallery .grid').slideToggle();
+  })
 
 
 
