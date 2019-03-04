@@ -75,35 +75,67 @@ $(function() {
   // });
 
 //   var container = $('.grid');
-//   container.imagesLoaded( function(container) {
-//     var msnry = new Masonry( container, {
+//   // console.log(container);
+//   container.imagesLoaded( function() {
+//     var mas = $('.grid');
+//     var msnry = new Masonry( mas, {
 //     itemSelector: '.grid-item',
 //     columnWidth: '.grid-sizer',
 //     // gutter: 10,
 //     percentPosition: true
+    
 //   });
 
-//   msnry.on( 'layoutComplete', function( msnryInstance, laidOutItems ) {
-//     $('#gallery .grid').css("display", "none");
-//   });
+  
 
-//   msnry.layout();
+  
+
+//   // msnry.on( 'layoutComplete', function( msnryInstance, laidOutItems ) {
+//   //   $('#gallery .grid').css("display", "none");
+//   // });
+
+//   // msnry.layout();
 
 // });
 
-  var container = document.querySelector('.grid');
-  var msnry = new Masonry( container, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    // gutter: 10,
-    percentPosition: true
+  var $container = $('.grid');
+  $container.imagesLoaded( function() {
+      $container.masonry({
+        itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          // gutter: 10,
+          percentPosition: true
+      });
+     
   });
 
-  msnry.on( 'layoutComplete', function( msnryInstance, laidOutItems ) {
-    $('#gallery .grid').css("display", "none");
+  $('[data-fancybox="gallery"]').fancybox({
+    // Options will go here
   });
 
-  msnry.layout();
+  // var container = document.querySelector('.grid');
+  // var msnry = new Masonry( container, {
+  //   itemSelector: '.grid-item',
+  //   columnWidth: '.grid-sizer',
+  //   // gutter: 10,
+  //   percentPosition: true
+  // });
+
+  // msnry.on( 'layoutComplete', function( msnryInstance, laidOutItems ) {
+  //   $('#gallery .grid').css("display", "none");
+  // });
+
+  // msnry.layout();
+
+
+  // var $grid = $('.grid').imagesLoaded( function() {
+  //     // init Masonry after all images have loaded
+  //     var $mas = $grid.masonry({
+  //       itemSelector: '.grid-item',
+  //     columnWidth: '.grid-sizer',
+  //     // gutter: 10,
+  //     percentPosition: true
+  //     });
 
   
 
@@ -140,7 +172,7 @@ $(function() {
   
   //gallery btn
   $('#gallery .gallery__btn').on('click', function() {
-    $('#gallery .grid').slideToggle(1000);
+    $('#gallery .grid').slideToggle(500);
   })
 
 
