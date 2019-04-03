@@ -7,7 +7,10 @@
 	<!-- <base href="/"> -->
 
 	<title>Гостиница для кошек в Красногорске</title>
-	<meta name="description" content="">
+	<meta name="description" content="Комфортный отель и груминг-салон
+  для собак и кошек в Красногорске
+  ">
+  <meta name="keywords" content="Гостиница для кошек в Красногорске, зоогостиница, передержка животных, гостиница для маленьких собак">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,17 +26,27 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/main.min.css">
   <!-- <link rel="stylesheet" href="libs/liMarquee.css"> -->
   
 
 </head>
 
-<body>
+<body class="loading">
+
+    <div class="preloader">
+        <div class="cat">
+          <div class="cat__body"></div>
+          <div class="cat__body"></div>
+          <div class="cat__tail"></div>
+          <div class="cat__head"></div>
+        </div>
+      </div>
 
   <!------------------------------- header ------------------------------------->
   <header>
+    <div class="header">
     <div class="container">
     <nav class="navbar navbar-expand-xl navbar-dark ">
       <a class="navbar-brand" href="/"><img src="img/logo.png" alt="logo"></a>
@@ -89,11 +102,11 @@
     <div class="col-md-6">
       
       <div class="welcome__img"><img src="img/welcome.png" alt="img"></div>
-      <h2 class="into__header">MR.CAT & HOUSE</h2>
-      <p class="intro__text">Комфортный отель и груминг-салон
-          для  собак и кошек в Красногорске</p>
+      <p class="into__header">MR.CAT & HOUSE</p>
+      <h1 class="intro__text">Комфортный отель и груминг-салон
+          для собак и кошек в Красногорске</h1>
           
-      <p class="intro__price">от 349 руб. в сутки</p>
+      <p class="intro__price">от 350 руб. в сутки</p>
       
           
       
@@ -105,13 +118,14 @@
 
 
 </div>
+</div>
   </header>
   <!------------------------------- popup ------------------------------------->
   <div class="popup_wrap">
   </div>
   <div class="popup">
-    <h4 class="popup__header">Закажите звонок специалиста
-      </h4>
+    <h3 class="popup__header">Закажите звонок специалиста
+      </h3>
     <p class="popup__text">Мы свяжемся с вами в ближайшее время
       </p>
     <form  class="popup__form" method="post">
@@ -128,7 +142,7 @@
   <section id="advantages">
     <div class="container">
       <div class="section__block">
-        <h3 class="block__header">ПРЕИМУЩЕСТВА</h3>
+        <h2 class="block__header">ПРЕИМУЩЕСТВА</h2>
         <div class="row text-center">
           <div class="col-md-4">
             <div class="item">
@@ -207,7 +221,7 @@
   <section id="gallery">
     <div class="container-fluid">
       <div class="section__block">
-          <h3 class="block__header">ГАЛЕРЕЯ</h3>
+          <h2 class="block__header">ГАЛЕРЕЯ</h2>
 
           <div class="carousel">
 
@@ -280,7 +294,7 @@
   <section id="price">
     <div class="container">
       <div class="section__block">
-          <h3 class="block__header">СТОИМОСТЬ ПРОЖИВАНИЯ</h3>
+          <h2 class="block__header">СТОИМОСТЬ ПРОЖИВАНИЯ</h2>
           <div class="row justify-content-center">
             <div class="col-md-8">
                 <p class="block__text">Проживание свыше 30 дней скидка 15%. Второй кот одного хозяина 70% (только категории Suite и Deluxe).
@@ -341,7 +355,7 @@
                 <div class="down__block">
                   <div class="first__block">
                     
-                  <span class="price mr-auto">349 &#8381;</span>
+                  <span class="price mr-auto">350 &#8381;</span>
                 
                 
                   <button class="tarif__btn ml-auto">Бронировать</button>
@@ -498,7 +512,7 @@
                   <div class="tarif__block">
                     <div class="up__block">
                       <div class="first__block act">
-                        <h4 class="tarif__name">Номер «SUITE»</h4>
+                        <h4 class="tarif__name">Номер «DELUXE»</h4>
                         <div class="angle__icon"><i class="fa fa-angle-down"></i></div>
                         
                       </div>
@@ -507,27 +521,47 @@
                         <ul class="tarif__desc">
                             <li class="description">
                                 <div class="check__icon"><i class="fa fa-check-circle"></i></div>
-                              <p class="description__text">Улучшенный стеклянный номер 1,2м х1.2м х 2,10.</p> 
+                              <p class="description__text">Большой номер 1,4м х 1,1м х 2,1м.</p> 
+                            </li>
+                          
+                            <li class="description">
+                                <div class="check__icon"><i class="fa fa-check-circle"></i></div>
+                              <p class="description__text">Автоматическая поилка.</p> 
+                            </li>
+                          
+                            <li class="description">
+                                <div class="check__icon"><i class="fa fa-check-circle"></i></div>
+                              <p class="description__text">Видеонаблюдение 24/7 с возможностью круглосуточного доступа к видеотрансляции.</p> 
+                            </li>
+                          
+                            <li class="description">
+                                <div class="check__icon"><i class="fa fa-check-circle"></i></div>
+                              <p class="description__text">Связь через WhatsApp.</p> 
+                            </li>
+                          
+                            <li class="description">
+                                <div class="check__icon"><i class="fa fa-check-circle"></i></div>
+                              <p class="description__text">Забота и игры.</p> 
                             </li>
                           
                           <li class="description">
                               <div class="check__icon"><i class="fa fa-check-circle"></i></div>
-                            <p class="description__text">Видеонаблюдение.</p> 
-                          </li>
-                          
-                          <li class="description">
-                              <div class="check__icon"><i class="fa fa-check-circle"></i></div>
-                            <p class="description__text">Связь через WhatsApp.</p> 
-                          </li>
-                          
-                          <li class="description">
-                              <div class="check__icon"><i class="fa fa-check-circle"></i></div>
-                            <p class="description__text">Забота и игры.</p> 
-                          </li>
-                          
-                          <li class="description">
-                              <div class="check__icon"><i class="fa fa-check-circle"></i></div>
                             <p class="description__text">Ежедневная уборка номера.</p> 
+                          </li>
+                          
+                          <li class="description">
+                              <div class="check__icon"><i class="fa fa-check-circle"></i></div>
+                            <p class="description__text">Комкующийся наполнитель.</p> 
+                          </li>
+                          
+                          <li class="description">
+                              <div class="check__icon"><i class="fa fa-check-circle"></i></div>
+                            <p class="description__text">Трансфер при заселении от 14 дней.</p> 
+                          </li>
+                          
+                          <li class="description">
+                              <div class="check__icon"><i class="fa fa-check-circle"></i></div>
+                            <p class="description__text">Когтеточка, одноразовые игрушки.</p> 
                           </li>
                           
                           <li class="description">
@@ -537,7 +571,7 @@
                             
                           <li class="description">
                               <div class="check__icon"><i class="fa fa-exclamation-circle"></i></div>
-                            <p class="description__text">Выгул 200р.</p> 
+                            <p class="description__text">Выгул 350р.</p> 
                           </li>
                               
                               
@@ -548,8 +582,8 @@
                     <div class="down__block">
                       <div class="first__block">
                         
-                      <span class="price">590 &#8381;</span>
-                      <span class="discount mr-auto">650 &#8381;</span>
+                      <span class="price">1000 &#8381;</span>
+                      <!-- <span class="discount mr-auto">650 &#8381;</span> -->
                     
                     
                       <button class="tarif__btn ml-auto">Бронировать</button>
@@ -570,7 +604,7 @@
   <section id="more__info">
     <div class="container">
       <div class="section__block">
-          <h3 class="block__header">ПРЕБЫВАНИЕ ПИТОМЦЕВ В ОТЕЛЕ</h3>
+          <h2 class="block__header">ПРЕБЫВАНИЕ ПИТОМЦЕВ В ОТЕЛЕ</h2>
           <div class="row justify-content-center">
             <div class="col-md-8">
                 <p class="block__text">О Вашей кошечке заботятся и делают все, чтобы ей было комфортно, пока Вы в отъезде или заняты.
@@ -593,7 +627,7 @@
             </div>
             </div>
             <div class="col-md-8">
-              <p class="info__text">
+              <p>
 
 «Mr.Cat&House» – это новый уютный отель для кошек, решающий проблему передержки животных. Отправляясь в отпуск или командировку, Вам больше не нужно переживать за своего любимца, оставленного у знакомых. <br><br>
 
@@ -660,12 +694,12 @@
                         До заселения Ваше животное должно быть обработано от паразитов, прививки от чумы, энтерита, лептоспироза, бешенства, аденовирусной и короновирусной инфекции, гепатита и вакцинировано не менее, чем за 1 месяц до приезда к нам. Пожалуйста, обработайте Ваше животное от глистов и блох.<br><br> </p>
                         
                          
-                        <ul class="rules__list">
-                          <li class="rules__item">Заселение в 12.00, выселение 12.00.</li>
-                          <li class="rules__item">Ранее или позднее выселение оплачивается дополнительно, при условии наличия свободных номеров.</li>
-                          <li class="rules__item">Заезд С 8:00-12:00 +200 руб.; выезд с 12:00-16:00 +200 руб. Если выселение животного осуществляется после 16.00 оплата  считается как за полные сутки.</li>
-                          <li class="rules__item">Агрессивное поведение +500 руб.</li>
-                          <li class="rules__item">При бронировании номера вноситься предоплата 1000 руб. (если вы отказываетесь от заселения, по независящим от нас причинам, оплата не возвращается).</li>
+                        <ul>
+                          <li >Заселение в 12.00, выселение 12.00.</li>
+                          <li >Ранее или позднее выселение оплачивается дополнительно, при условии наличия свободных номеров.</li>
+                          <li >Заезд С 8:00-12:00 +200 руб.; выезд с 12:00-16:00 +200 руб. Если выселение животного осуществляется после 16.00 оплата  считается как за полные сутки.</li>
+                          <li >Агрессивное поведение +500 руб.</li>
+                          <li >При бронировании номера вноситься предоплата 1000 руб. (если вы отказываетесь от заселения, по независящим от нас причинам, оплата не возвращается).</li>
                         </ul>
                         
                         
@@ -701,7 +735,7 @@
   <section id="comments">
     <div class="container">
       <div class="section__block">
-        <h3 class="block__header">ОТЗЫВЫ</h3>
+        <h2 class="block__header">ОТЗЫВЫ</h2>
           <div class="row justify-content-center">
             <div class="col-md-8">
                 <p class="block__text">Только настоящие и честные
@@ -799,15 +833,15 @@
   <section id="service">
     <div class="container">
       <div class="section__block">
-          <h3 class="block__header">Груминг кошек и собак
-            </h3>
+          <h2 class="block__header">Груминг кошек и собак
+            </h2>
           <div class="row">
             <div class="col-lg-4">
                 <div class="img__block">
               <div class="row">
-                <div class="col-12"> <div class="service__img"><img src="img/service/1.png" alt="" class="img-fluid"></div> </div>
+                <div class="col-12"> <div class="service__img"><img src="img/service/1.png" alt="" class="img-fluid round"></div> </div>
                 <div class="col-6 "><img src="img/service/2.png" alt="" class="img-fluid round"></div>
-                <div class="col-6"><img src="img/service/3.png" alt="" class="img-fluid"></div>
+                <div class="col-6"><img src="img/service/3.png" alt="" class="img-fluid round"></div>
               </div>
             </div>
             </div>
@@ -1076,8 +1110,8 @@
   <section id="faq">
     <div class="container">
       <div class="section__block">
-          <h3 class="block__header">Часто задаваемые вопросы
-            </h3>
+          <h2 class="block__header">Часто задаваемые вопросы
+            </h2>
           <div class="row">
             <div class="col-12">
               <div class="faq__block">
@@ -1132,8 +1166,8 @@
   <section id="form">
     <div class="container">
       <div class="section__block">
-          <h3 class="block__header">Ну что, протестируем?
-            </h3>
+          <h2 class="block__header">Ну что, протестируем?
+            </h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <p class="block__text">заполните форму ниже чтобы узнать стоимость
@@ -1201,8 +1235,8 @@
   <section id="position">
     <div class="container">
       <div class="section__block">
-          <h3 class="block__header">Мы находимся тут
-            </h3>
+          <h2 class="block__header">Мы находимся тут
+            </h2>
 
             <div class="yandex__map">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6e1c55ba7fe0cac00335a23baac06a02d74c9b2a63b20fb0405ca22eee3e33b4&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
