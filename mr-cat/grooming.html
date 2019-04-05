@@ -60,13 +60,13 @@
               <a class="nav-link" href="/">главная</a>
             </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/grooming">груминг</a>
+            <a class="nav-link" href="grooming.html">груминг</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/blog">блог</a>
+            <a class="nav-link" href="blog.html">блог</a>
             </li>
           <li class="nav-item ">
-            <a class="nav-link" href="/aboutus">о нас</a>
+            <a class="nav-link" href="about.html">о нас</a>
           </li>
 
         </ul>
@@ -141,6 +141,8 @@
   <!------------------------------- content__block ------------------------------------->
 
   <section id="grooming">
+    <!----- desktop__block ------>
+    <div class="grooming__desktop">
     <div class="intro__block">
     <div class="container">
       <div class="row">
@@ -162,14 +164,15 @@
         <div class="col-md-5">
           <div class="img__block">
             <div class="row">
-              <div class="col-6"><img src="img/grooming/1.png" alt="" class="img-fluid round"></div>
-              <div class="col-6"><img src="img/grooming/2.png" alt=""  class="img-fluid round"></div>
-              <div class="col-6"><img src="img/grooming/3.png" alt=""  class="img-fluid round"></div>
-              <div class="col-6"><img src="img/grooming/4.png" alt=""  class="img-fluid round"></div>
+              <div class="col-6"><img src="img/grooming/1.png" alt="" class="img-fluid rounded"></div>
+              <div class="col-6"><img src="img/grooming/2.png" alt=""  class="img-fluid rounded"></div>
+              <div class="col-6"><img src="img/grooming/3.png" alt=""  class="img-fluid rounded"></div>
+              <div class="col-6"><img src="img/grooming/4.png" alt=""  class="img-fluid rounded"></div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   </div>
   <div class="separator__block">
@@ -179,6 +182,49 @@
       </p>
     </div>
   </div>
+</div>
+
+<!----- mobile__block ------>
+  <div class="grooming__mobile">
+    <div class="container">
+        <h2 class="grooming__header">
+            МЫ ПРЕДЛАГАЕМ
+        </h2>
+      <div class="intro__block-mobile">
+          
+
+          <ul class="service__list">
+              <li class="service__item">Груминг домашних животных.</li>
+              <li class="service__item">Тримминг жесткошерстных пород.</li>
+              <li class="service__item">Гигиенические процедуры:</li>
+              <li class="service__item">Уход за когтями питомца (стрижка когтей)</li>
+              <li class="service__item">Уход за ушами животного</li>
+              <li class="service__item">Чистка зубов собаке и кошке.</li>
+              <li class="service__item">Креативный рисунок по шерсти, окрашивание шерсти</li>
+              <li class="service__item">Spa-процедуры и многое другое.</li>
+            </ul>
+
+            <div class="separator__block"></div>
+      
+      <p class="separator__text">
+          *По договорённости выезд на дом грумера. Услуги осуществляются по предварительной <br> записи! Первичный осмотр нашими мастерами и профессиональная консультация в ПОДАРОК!
+      </p>
+    </div>
+
+    <h2 class="grooming__header">
+        ФОТО
+    </h2>
+
+    <div class="img__block">
+        <div class="row no-gutters">
+          <div class="col-6"><img src="img/grooming/1.png" alt="" class="img-fluid round"></div>
+          <div class="col-6"><img src="img/grooming/2.png" alt=""  class="img-fluid round"></div>
+          <div class="col-6"><img src="img/grooming/3.png" alt=""  class="img-fluid round"></div>
+          <div class="col-6"><img src="img/grooming/4.png" alt=""  class="img-fluid round"></div>
+        </div>
+      </div>
+  </div>
+</div>
 </section>
 
   <!------------------------------- table__block ------------------------------------->
@@ -186,9 +232,10 @@
   <section id="table">
     <div class="container">
       <!------------ first__table ---------------->
-      <h4 class="table__header">Стрижка котов и кошек</h4>
+      <div class="row">
+      <h4 class="table__header w-100">Стрижка котов и кошек</h4>
         
-            <div class="table-responsive">
+            <div class="table-responsive first__fix">
                 <table class="table text-center first">
                     <tbody>
                   
@@ -226,13 +273,16 @@
                         <td class="end">-</td>
                       </tr>
 
-                      <tr>
+                      <!-- <tr> -->
                         
-                          <th scope="row" class="bold">Вычесывание</th>
+                          <!-- <th scope="row" class="bold">Вычесывание</th>
                          <td colspan="3">400р / 15 мин
-                         </td>
+                         </td> -->
+
+                         <!-- <td scope="row" colspan="4" ><span class="bold">Вычесывание:</span> 400р / 15 мин </th> -->
                          
-                       </tr>
+                         
+                       <!-- </tr> -->
 
                       
                         
@@ -241,16 +291,20 @@
 
               </div>
 
-              <!------------ second__table ---------------->
+              <p class="comb w-100"><span class="bold">Вычесывание:</span> 400р / 15 мин</p>
+            </div>
 
-              <h4 class="table__header">Стрижка карликовых собак до 3 кг</h4>
+              <!------------ second__table ---------------->
+              <div class="row">
+
+              <h4 class="table__header w-100">Стрижка карликовых собак до 3 кг</h4>
         
             <div class="table-responsive">
                 <table class="table text-center second">
                     <tbody>
                         <tr>
                     
-                            <th scope="row" class="bold">Стрижка</th>
+                            <th scope="row" >Стрижка</th>
                            <td class="bg start">Гигиеническая</td>
                            <td class="bg start">Модельная</td>
                            <td class="bg start">Комплексная</td>
@@ -260,8 +314,8 @@
 
                   <tr>
                     
-                     <th scope="row"> <span class="bold">Карликовые собаки до 3кг :</span>                      
-                       Йоркширкский терьер,чихуахуа и тд.</th>
+                     <th scope="row">Карликовые собаки до 3кг : <br>  <span class="small">Йоркширкский терьер,чихуахуа и тд.</span>                      
+                       </th>
                     <td class="middle">1100</td>
                     <td class="middle">1400</td>
                     <td class="middle">1900</td>
@@ -269,10 +323,10 @@
 
                   <tr>
                       
-                       <th scope="row"><span class="bold">Cобаки до 10кг :</span> йоркширкский терьер, балонки, пикинес , шпиц, 
+                       <th scope="row">Cобаки до 10кг : <br> <span class="small">йоркширкский терьер, балонки, пикинес , шпиц, 
                         ши-тцу, скотч-терьер,
                         вест хейленд вайт терьер, китайская хохлатая,               
-                        цвергшнауцер,норвич терьер ,фокстерьер, вельштерьер,метис итд.</th>
+                        цвергшнауцер,норвич терьер ,фокстерьер, вельштерьер,метис итд.</span> </th>
                       <td class="middle">1200</td>
                       <td class="middle">1400</td>
                       <td class="middle">2000</td>
@@ -280,7 +334,7 @@
 
                     <tr>
                         
-                         <th scope="row" class="bold">Стрижка ножницами</th>
+                         <th scope="row" >Стрижка ножницами</th>
                         <td class="middle">1200
                         </td>
                         <td class="middle">1500</td>
@@ -289,7 +343,7 @@
 
                       <tr>
                         
-                        <th scope="row" class="bold">Пудель</th>
+                        <th scope="row" >Пудель</th>
                        <td class="middle">1600
                        </td>
                        <td class="middle">-</td>
@@ -298,7 +352,7 @@
 
                       <tr>
                         
-                        <th scope="row" class="bold">Кокер</th>
+                        <th scope="row" >Кокер</th>
                        <td class="end">1600
                        </td>
                        <td class="end">-</td>
@@ -313,9 +367,11 @@
                 
 
               </div>
+            </div>
 
               <!------------ third__table ---------------->
-      <h4 class="table__header">Стрижка собак 10-20кг*</h4>
+              <div class="row">
+      <h4 class="table__header w-100">Стрижка собак 10-20кг*</h4>
         
       <div class="table-responsive">
           <table class="table text-center third">
@@ -338,11 +394,6 @@
             </tr>
 
             <tr>
-                
-                
-
-              <tr>
-                  
                    <th scope="row">Породы с густой или длинной шерстью</th>
                   <td class="end">1400
                   </td>
@@ -357,9 +408,121 @@
           </table>
 
         </div>
+      </div>
+
+        <!------------ fourth__table ---------------->
+        <div class="row justify-content-center">
+        <h4 class="table__header w-100">Дополнительные услуги</h4>
+        
+            
+          <div class="col-md-8">
+        <div class="table-responsive round">
+          <table class="table text-center fourth">
+              <tbody>
+            
+            <tr>
+               <th scope="row">Агрессивное животное</th>
+              <td>500-1500</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Гигиеническая обработка ушей/глаз
+                  </th>
+               <td>300/100</td>
+             </tr>
+
+             <tr>
+                <th scope="row">Чистка параанальных желез
+                  </th>
+               <td>300</td>
+             </tr>
+
+             <tr>
+                <th scope="row">Подрезка когтей
+                  </th>
+               <td>400
+                </td>
+             </tr>
+
+             <tr>
+                <th scope="row">Тримминг</th>
+               <td>400/20 мин</td>
+             </tr>
+                
+
+                  
+             <tr>
+                <th scope="row">Вычесывание собак</th>
+               <td>400/15 мин</td>
+             </tr>
+
+             <tr>
+                <th scope="row">Механическая чистка зубов от камня, легкой и средней степени отложения</th>
+               <td>100/зуб <br> 1500/весь рот</td>
+             </tr>
+
+             <tr class="include__icon">
+                <th scope="row">Чистка всего рта ультра звуком <img src="img/icons/good.png" alt="" class="table__icon"></th>
+               <td>2800</td>
+             </tr>
+
+             <tr>
+                <th scope="row">Установка мягких коготков, передние лапы</th>
+               <td>600</td>
+             </tr>
+
+             <tr>
+                <th scope="row">Установка мягких коготков, 
+                    все лапы</th>
+               <td>800</td>
+             </tr>
+
+             <tr>
+                <th scope="row">Хвост «штопор» у кошек и котов</th>
+               <td>800</td>
+             </tr>
 
 
-            </div>
+                </tbody>
+          </table>
+
+          
+        </div>
+        </div>
+      </div>
+    
+
+    <div class="service__form">
+        <div class="form__cat"><img src="img/form_cat.png" alt=""></div>
+        <div class="row  justify-content-center">
+          <div class="col-md-8">
+            <form  id="service__form" method="post">
+              <div class="row no-gutters">
+                <div class="col-lg-5">
+                  <div class="left__block text-center">
+                    <div class="logo"><img src="img/black_logo.png" alt=""></div>
+                    <input type="text" placeholder="Имя" class="form__input" name="name" required minlength="2" maxlength="25">
+                    <input type="tel" placeholder="Телефон" class="form__input" name="tel" required minlength="5" maxlength="11">
+                    <input type="email" placeholder="Email" class="form__input" name="email">
+                    <div class="btn__wrap"><button type="submit" class="form__btn">заказать услугу</button>
+                  </div>
+                </div>
+              </div>
+                <div class="col-lg-7">
+                  <div class="right__block">
+                    <p class="text">ваш комментарий</p>
+                    <input name="comment" type="text" class="big__input">
+                    <p class="result">&nbsp</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
     
           </section>
   <!------------------------------- footer ------------------------------------->
