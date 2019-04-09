@@ -30,6 +30,11 @@
       $('.media__block').append(kid1, kid2);
       $('.welcome__img img').attr("src", "img/welcome_mobile.png");
       $('#form .logo img').attr("src", "img/white_logo.png");
+      // $('#table .include__icon .table__icon').attr('src', 'img/icons/good_small.png');
+    }
+
+    if (window.matchMedia("(max-width: 372.98px)").matches) {
+      $('#table .include__icon .table__icon').css('margin-top', '-27px');
     }
 
     if (window.matchMedia("(max-width: 1198px)").matches) {
@@ -271,6 +276,7 @@
     //faq
     $('#faq .question__block:nth-child(3)').addClass('act');
     $('#faq .answer__block:nth-child(4)').addClass('active');
+    $('#faq .question__block:nth-child(7)').css('margin-bottom', '0');
     $('#faq .question__block').on('click', function() {
       var answer = $(this).next();
       if(!$(this).hasClass('act')) {
@@ -291,6 +297,7 @@
     }
   
     //service
+    
     $('#service .table__header').on('click', function() {
       $(this).toggleClass("active__table").next().slideToggle(400);
     });
@@ -359,6 +366,17 @@
   
     //scroll
     $('.header .navbar-nav .work__link').on('click', function(e) {
+      e.preventDefault(e);
+  
+      var selector = $(this).attr('href');
+      var h = $(selector);
+  
+      $('html, body').animate({
+        scrollTop: h.offset().top
+      }, 400);
+    });
+
+    $('.grooming .btn__wrap .link').on('click', function(e) {
       e.preventDefault(e);
   
       var selector = $(this).attr('href');
