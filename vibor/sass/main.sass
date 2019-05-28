@@ -1,0 +1,377 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+///////////////////
+//common styles ///
+///////////////////
+
+p
+  margin-bottom: 0
+
+.block__string
+  width: 74px
+  height: 2px
+  background-color: #fff
+  // content: ''
+  display: inline-block
+  // margin-bottom: 30px
+
+.block__header
+  color: #000000
+  font-family: $default-font
+  font-size: 20px
+  font-weight: 700
+
+.accent
+  background-color: $accent
+
+.white
+  color: #fff
+
+.text
+  // color: $text
+  color: #000
+  font-family: $default-font
+  font-size: 14px
+  font-weight: 400
+
+.black
+  color: #000
+
+.big__header
+  
+  font-family: $header-font
+  font-size: 36px
+  font-weight: 400
+  text-transform: uppercase
+  color: #212121
+
+.block__button
+  color: #ffffff
+  font-family: $custom-font
+  font-size: 15px
+  font-weight: 400
+  padding: 14px 32px
+  border: 2px solid #fff
+
+.shadow__img
+  box-shadow: 0 0 10px rgba(0px,10px,0,0.9)
+/////////
+//Menu //
+////////
+header
+  background-color: #D6D6D6
+  // background-color: $bg_menu
+  .row
+    min-height: 72px
+  
+  .navbar-dark
+    .navbar-nav
+      .nav-link
+        color: $menu
+        font-size: 20px
+
+
+
+.custom-toggler .navbar-toggler-icon 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(35,42,77, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+
+.custom-toggler.navbar-toggler 
+  border-color: rgb(35,42,77)
+
+
+
+/////////
+//intro //
+////////
+#intro__main
+  background: url('../img/bg/bg_main.jpg') no-repeat center center 
+  background-size: cover 
+.intro__block
+  padding-top: 182px
+  padding-bottom: 153px
+  .header__text
+    color: #ffffff
+    font-family: $header-font
+    font-size: 36px
+    font-weight: 400
+    text-transform: uppercase
+  .block__header
+    color: #ffffff
+    font-family: $header-font
+    font-size: 50px
+    margin-bottom: 33px
+  .block__text
+    color: #ffffff
+    font-family: $header-font
+    font-size: 16px
+    margin-bottom: 44px
+  
+  .block__string
+    margin-bottom: 30px
+
+#intro__services
+  background: url('../img/bg/bg_services.jpg') no-repeat center center 
+  background-size: cover
+
+#intro__construction
+  background: url('../img/bg/bg_construction.jpg') no-repeat center center 
+  background-size: cover
+
+#intro__companies
+  background: url('../img/bg/bg_refinance.jpg') no-repeat center center 
+  background-size: cover
+
+#intro__physical
+  background: url('../img/bg/bg_physical.jpg') no-repeat center center 
+  background-size: cover
+
+#intro__credit
+  background: url('../img/bg/bg_credit.jpg') no-repeat center center 
+  background-size: cover
+
+#intro__partners
+  background: url('../img/bg/bg_partners.jpg') no-repeat center center 
+  background-size: cover
+
+#intro__personal
+  background: url('../img/bg/bg_personal.jpg') no-repeat center center 
+  background-size: cover
+      
+    
+/////////
+//mission //
+////////
+#mission
+  background-color: $grey
+  .mission__block
+    padding-top: 147px
+    padding-bottom: 114px
+    .left__block
+      display: flex
+      .text__block
+        margin-left: 100px
+        .text
+          display: none
+        .show
+          display: block
+        .text__link
+          color: #ffffff
+          font-family: $custom-font
+          font-size: 15px
+          font-weight: 400
+          // line-height: 20px
+          padding: 14px 32px
+          background-color: $accent
+  .btn
+    display: block
+    text-align: center
+    text-decoration: none
+    // margin: 2px 0
+    padding: 34px
+    border: solid 1px transparent
+    color: #ffffff
+    background-color: #333333
+    border-radius: 0
+    font-size: 20px
+    &:active, &:focus
+      outline: 0
+      outline-offset: 0
+  .active
+    background-color: $accent
+  .text-block
+    display: inline-block
+  .text
+    margin: 50px 0
+
+/////////
+//services //
+////////
+
+.services
+  padding: 107px 0 130px 0
+
+  .mortgage__list
+    padding-left: 10px
+  
+  .block__items
+    // margin-top: 46px
+  .block__item
+    display: flex
+    margin-bottom: 42px
+    align-items: center
+  .icon__block
+    // padding: 20px
+    height: 40px
+    width: 40px
+    line-height: 40px
+    // border: 2px solid $accent
+    border: 2px solid $accent
+    display: flex
+    text-align: center
+    justify-content: center
+    align-items: center
+    border-radius: 20px
+    i
+      color: $accent
+      font-size: 16px
+      font-weight: 400
+  .item__right
+    // display: inline-block
+    margin-left: 31px
+    .right__header
+      color: #212121
+      font-family: $custom-font
+      font-size: 14px
+      font-weight: 400
+      // margin-bottom: 5px
+    .rigth__text
+      color: $text
+      font-family: $default-font
+      font-size: 14px
+      font-weight: 400
+  .text
+    margin-bottom: 46px
+  .block__string
+    margin: 30px 0
+  
+
+.mortgage
+  .block__item
+    margin-bottom: 15px
+  .text
+    margin-bottom: 20px
+  
+/////////
+//about //
+////////
+#about
+  background-color: $grey
+  .section__block
+    padding: 90px 0 130px 0
+    .text
+      color: #000
+    .img__block
+      margin-bottom: 30px
+  .block__string
+    margin: 30px 0
+  .mortgage__list
+    padding-left: 15px
+
+///////////////
+//advantages //
+///////////////
+
+
+.advantages
+  background-color: $grey
+  .section__block
+    padding: 108px 0 105px 0
+  .block__string
+    margin: 30px 0
+  .icon__block
+    // padding: 20px
+    margin-top: 80px
+    height: 70px
+    width: 70px
+    // line-height: 70px
+    border: 2px solid $accent
+    display: inline-block
+    // text-align: center
+    // justify-content: center
+    // align-items: center
+    border-radius: 35px
+    position: relative
+    i
+      color: $accent
+      font-size: 32px
+      font-weight: 400
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+  .block__header
+    margin: 29px 0 25px 0
+    color: #333333
+    font-family: $default-font
+    font-size: 20px
+    font-weight: 700
+
+.partners
+  background-color: #fff
+  img
+    height: 100px
+    width: 350px
+    margin-bottom: 50px
+
+
+
+///////////////
+//to__services //
+///////////////
+#to__services
+  background-color: #9a9a9a
+  .section__block
+    padding: 74px 0 63px 0
+  .big__header
+    color: #fff
+  .text
+    color: #fff
+    padding-bottom: 33px
+  .block__string
+    margin: 26px 0
+
+
+///////////////
+//footer //
+///////////////
+footer
+  // background-color: #D6D6D6
+  background-color: $grey
+  .section__block
+    padding: 50px 0
+  .footer__header
+    color: $menu
+  .footer__text
+    color: #000
+
+
+  
+
+
+
+
+
+@import "media" // Always at the end
