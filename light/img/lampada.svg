@@ -1,0 +1,33 @@
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 178.7 221.5" style="enable-background:new 0 0 178.7 221.5;" xml:space="preserve">
+<style type="text/css">
+	.sts0{fill:#FFFFFF;}
+	.sts1{fill:url(#SVGID_1s_);}
+	.sts2{fill:#686868;}
+	.sts3{fill:#B70000;}
+	.sts4{fill:url(#SVGID_2s_);}
+	.sts5{fill:url(#SVGID_3s_);}
+</style>
+<ellipse class="sts0" cx="89" cy="129.5" rx="27.2" ry="26.7"/>
+<linearGradient id="SVGID_1s_" gradientUnits="userSpaceOnUse" x1="89.7019" y1="261.4602" x2="88.8458" y2="92.978">
+	<stop  offset="4.219112e-02" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.2744" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.9163" style="stop-color:#262626"/>
+</linearGradient>
+<path class="sts1" d="M40,85.3l-34.5,41c-1.6,1.9-0.4,4.5,2.5,5.1c21.8,4.5,100.8,18.6,162.5,0.2c2.5-0.7,3.5-3.1,2.2-4.9l-31.2-41.4
+	c-0.9-1.2-2.7-1.9-4.5-1.6c-11.8,1.7-56.6,7.2-92.3,0.2C42.9,83.6,41,84.1,40,85.3z"/>
+<path class="sts2" d="M134.2,76.8c0,0-55.2-5.8-86.4,0C47.8,76.9,88.6,89.1,134.2,76.8z"/>
+<path class="sts3" d="M47.8,76.6c4.2,1.2,40.1,10.7,86.4,0c0.2-0.1,2.2,2.6,2.3,2.8l3.5,5.2c0.2,0.4,0,0.8-0.4,0.9
+	c-7.2,1.2-56.4,8.8-97-0.1c-0.4-0.1-0.6-0.6-0.4-0.9l4.9-7.5C47.3,76.7,47.5,76.6,47.8,76.6z"/>
+<linearGradient id="SVGID_2s_" gradientUnits="userSpaceOnUse" x1="89.5047" y1="-161.0947" x2="89.1889" y2="-238.0053" gradientTransform="matrix(1 0 0 1 0 238)">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.5784" style="stop-color:#000000"/>
+</linearGradient>
+<rect x="87.9" class="sts4" width="2.9" height="76.9"/>
+<radialGradient id="SVGID_3s_" cx="73.8479" cy="139.1466" r="32.0137" gradientTransform="matrix(2.2172 0 0 1.8566 -74.3921 -111.6643)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.1285" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.284" style="stop-color:#FBFBFB;stop-opacity:0.765"/>
+	<stop  offset="0.7905" style="stop-color:#F3F3F3;stop-opacity:0"/>
+</radialGradient>
+<ellipse class="sts5" cx="89.3" cy="146.7" rx="89.3" ry="74.8"/>
+</svg>
