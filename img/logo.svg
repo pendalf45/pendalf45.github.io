@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="244" height="244" viewBox="0 0 244 244">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d1d1d1;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="620" y="386" width="244" height="244" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="2.667" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.76"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" mode="screen" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Фигура_1_копия_3" data-name="Фигура 1 копия 3" class="cls-1" d="M629.786,580.128l-0.787-.79L813.9,395.369l0.786,0.79ZM669.1,619.637l-0.786-.79,184.9-183.969,0.787,0.79Zm-20.179-20.281-0.786-.79,184.9-183.97,0.787,0.791Zm20.219-203.565,0.791-.786L853.9,579.906l-0.79.786ZM629.627,435.1l0.79-.786,183.969,184.9L813.6,620Zm20.281-20.179,0.79-.786,183.969,184.9-0.79.786Z" transform="translate(-620 -386)"/>
+</svg>
